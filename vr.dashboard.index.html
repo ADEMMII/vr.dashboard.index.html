@@ -1,80 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VR Training Simulator Dashboard</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #007BFF;
-      color: #fff;
+      background-color: #cceeff; /* Sky blue */
+      color: #003366;
     }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
+    header {
+      background-color: #800020; /* Wine */
+      color: white;
+      padding: 20px;
       text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #a52a2a;
+      padding: 10px;
     }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: #800020;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #5c0010;
+    }
+    .intro {
+      padding: 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+    .intro img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
     .card {
-      background: #ffffff;
-      color: #000;
+      background-color: white;
+      border-radius: 10px;
       padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
     }
-    .card h2 {
-      font-size: 1.25rem;
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
       margin-bottom: 10px;
-      color: #0056b3;
+    }
+    .card h3 {
+      color: #003366;
     }
     .card p {
-      font-size: 0.95rem;
-      margin-bottom: 20px;
+      color: #333;
     }
     .card button {
-      background-color: #0056b3;
-      color: white;
+      margin-top: 10px;
       padding: 10px 20px;
+      background-color: #800020;
+      color: white;
       border: none;
-      border-radius: 8px;
-      font-size: 1rem;
+      border-radius: 5px;
       cursor: pointer;
     }
     .card button:hover {
-      background-color: #004199;
+      background-color: #5c0010;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>VR Training Simulator Dashboard</h1>
-    <div class="card-grid">
-      <div class="card">
-        <h2>User Interface</h2>
-        <p>Trainees interact using intuitive controls and immersive visuals.</p>
-        <button onclick="alert('Launching VR Session...')">Launch VR Session</button>
-      </div>
-      <div class="card">
-        <h2>Performance Logger</h2>
-        <p>Track actions, completion times, and user feedback in real-time.</p>
-        <button onclick="alert('Opening Logs...')">View Logs</button>
-      </div>
-      <div class="card">
-        <h2>Analytics Engine</h2>
-        <p>Evaluate learning outcomes with actionable metrics and charts.</p>
-        <button onclick="alert('Opening Analytics...')">Show Analytics</button>
-      </div>
+  <header>
+    FUOYE GROUP-13 VIRTUAL TRAINING PORTAL FOR PRIMARY AND SECONDARY SCHOOL STUDENT
+  </header>
+
+  <nav>
+    <a href="#">For Enterprise</a>
+    <a href="#">For Education</a>
+    <a href="#">For Partners</a>
+    <a href="#">Success Stories</a>
+    <a href="#">VR Development</a>
+    <a href="#">FAQ</a>
+    <a href="#">About us</a>
+    <a href="#">Sign In</a>
+  </nav>
+
+  <div class="intro">
+    <p>
+      Welcome to the FUOYE Virtual Training Portal. This platform is designed to provide immersive and interactive learning experiences for primary and secondary school students. Whether you're exploring virtual science labs, learning through simulations, or engaging in real-time performance analytics, this portal supports your growth every step of the way.
+    </p>
+    <img src="https://images.unsplash.com/photo-1581090700227-1e8e435e60ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="Virtual Training Banner" />
+  </div>
+
+  <div class="dashboard">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1615490147831-2225f2c8c5d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="VR User Interface" />
+      <h3>User Interface</h3>
+      <p>Trainees interact using intuitive controls and immersive visuals.</p>
+      <button>Launch VR Session</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Performance Logger" />
+      <h3>Performance Logger</h3>
+      <p>Track actions, completion times, and user feedback in real-time.</p>
+      <button>View Logs</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581093588401-9cbfbcfab4f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analytics Engine" />
+      <h3>Analytics Engine</h3>
+      <p>Evaluate learning outcomes with actionable metrics and charts.</p>
+      <button>Show Analytics</button>
     </div>
   </div>
 </body>
